@@ -1,7 +1,9 @@
 import requests
 
+from threepy.api import API
+
 class Feed:
-  def __init__(self, API api, feed_uid):
+  def __init__(self, api: API, broadcast_uid, feed_uid):
     self.broadcast_uid = broadcast_uid
     self.feed_uid = feed_uid
     self.endpoint = "/identities/" + self.broadcast_uid + "/feeds/" + self.feed_uid

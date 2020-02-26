@@ -1,5 +1,5 @@
 import tweepy
-from twee2three import config
+import config
 
 auth = tweepy.AppAuthHandler(config.consumer_token, config.consumer_secret)
 api = tweepy.API(auth)

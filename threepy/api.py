@@ -8,7 +8,9 @@ class API:
   def get_profile(self):
     endpoint = self.url + "/"
     response = requests.get(endpoint, headers=self.headers)
+    return response
 
   def get_identities(self):
     endpoint = self.url + "/identities"
     response = requests.get(endpoint, headers=self.headers)
+    return response
